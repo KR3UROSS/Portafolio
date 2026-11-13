@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Keury Rosario, Frontend Developer.">
+  <meta name="author" content="Keury Rosario">
+
+  <title>Keury Rosario | Frontend Developer</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <script>
+    const savedTheme = localStorage.getItem('keury-portfolio-theme');
+
+    document.documentElement.setAttribute(
+      'data-theme',
+      savedTheme === 'light' ? 'light' : 'dark'
+    );
+  </script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Background effects -->
+  <div class="background-grid"></div>
+  <div class="ambient-light ambient-light-one"></div>
+  <div class="ambient-light ambient-light-two"></div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+
+      <a href="#home" class="logo">
+        KR<span>.</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Inicio</a></li>
+        <li><a href="#about" class="nav-link">Sobre mí</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#experience" class="nav-link">Experiencia</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+
+
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar a tema claro"
+          aria-pressed="false" title="Cambiar tema">
+          <i id="theme-icon" class="fa-solid fa-sun"></i>
+        </button>
+
+
+
+        <a href="#contact" class="nav-cta">
+          Hablemos
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+
+      </div>
+
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero section" id="home">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          <span>PORTAFOLIO PERSONAL / 2026</span>
+        </div>
+
+        <p class="hero-pretitle">Hola, soy</p>
+
+        <h1>
+          Keury<br>
+          <span class="gradient-text">Rosario.</span>
+        </h1>
+
+        <h2 class="hero-role">
+          Desarrollador <span>FrontEnd</span>
+        </h2>
+
+        <p class="hero-description">
+          Desarrollo experiencias digitales modernas,
+          interfaces intuitivas y soluciones web que
+          combinan funcionalidad, diseño y tecnología.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="button button-primary">
+            Explorar proyectos
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="#contact" class="button button-outline">
+            Contactarme
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span>01 / 06</span>
+          <span class="meta-line"></span>
+          <span>DESARROLLADOR FRONTEND</span>
+        </div>
+
+      </div>
+
+
+      <!-- Abstract technology graphic -->
+      <div class="hero-visual">
+
+        <div class="visual-label visual-label-top">
+          <span>SYS.STATUS</span>
+          <span class="label-value">ONLINE</span>
+        </div>
+
+        <div class="orbital-system">
+
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+
+          <div class="orbit-core">
+            <span>KR</span>
+            <small>DEV / 001</small>
+          </div>
+
+          <div class="orbit-node node-one"></div>
+          <div class="orbit-node node-two"></div>
+          <div class="orbit-node node-three"></div>
+
+        </div>
+
+        <div class="visual-coordinates">
+          <span>LAT. 18.4861° N</span>
+          <span>LONG. 69.9312° W</span>
+        </div>
+
+        <div class="visual-label visual-label-bottom">
+          <span>CREATIVE SYSTEMS</span>
+          <span>V.01</span>
+        </div>
+
+        <div class="visual-cross cross-one">+</div>
+        <div class="visual-cross cross-two">+</div>
+
+      </div>
+
+      <a href="#about" class="scroll-indicator">
+        <span>DESLIZA PARA EXPLORAR</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+
+      <div class="section-heading reveal">
+        <span class="section-index">01 / SOBRE MÍ</span>
+        <h2>Más allá del <span>código.</span></h2>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-main reveal">
+          <span class="small-label">01. MI ENFOQUE</span>
+
+          <h3>
+            Transformando ideas en
+            <span class="gradient-text">experiencias digitales.</span>
+          </h3>
+
+          <p>
+            Soy Keury Rosario, desarrollador frontend
+            enfocado en construir experiencias web
+            funcionales, atractivas y adaptables.
+          </p>
+
+          <p>
+            Me interesa comprender cómo funciona la
+            tecnología, resolver problemas y crear
+            productos digitales que ofrezcan una
+            experiencia clara y agradable.
+          </p>
+
+          <p>
+            Mi enfoque combina aprendizaje constante,
+            pensamiento lógico y atención al detalle.
+          </p>
+        </div>
+
+
+        <div class="about-side reveal">
+
+          <div class="info-card">
+            <span class="small-label">DISCIPLINA</span>
+            <h4>Desarrollo web</h4>
+            <p>Diseño, desarrollo y optimización de interfaces.</p>
+          </div>
+
+          <div class="info-card">
+            <span class="small-label">FILOSOFÍA</span>
+            <h4>Menos ruido. Más intención.</h4>
+            <p>Código limpio, diseño funcional y soluciones prácticas.</p>
+          </div>
+
+          <div class="info-card">
+            <span class="small-label">UBICACIÓN</span>
+            <h4>República Dominicana</h4>
+            <p>Disponible para proyectos y colaboraciones.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="about-footer">
+        <span>CREATIVIDAD</span>
+        <span>PRESICIÓN</span>
+        <span>APRENDIZAJE CONTINUO</span>
+        <span>TÉCNOLOGIA</span>
+      </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
+
+      <div class="section-heading reveal">
+        <span class="section-index">02 / COMPATIBILIDADES</span>
+        <h2>Herramientas para <span>crear.</span></h2>
+        <p>Las tecnologías y habilidades que forman parte de mi desarrollo profesional.</p>
+      </div>
+
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <span class="skill-number">01</span>
+            <i class="fa-solid fa-code"></i>
+          </div>
+
+          <h3>Frontend</h3>
+          <p>Construcción de interfaces y experiencias web.</p>
+
+          <div class="skill-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>DISEÑO RESPONSIVO</span>
+          </div>
+        </div>
+
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <span class="skill-number">02</span>
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+
+          <h3>Frameworks</h3>
+          <p>Herramientas para desarrollar aplicaciones modernas.</p>
+
+          <div class="skill-tags">
+            <span>Bootstrap</span>
+            <span>React</span>
+            <span>Tailwind CSS</span>
+          </div>
+        </div>
+
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <span class="skill-number">03</span>
+            <i class="fa-solid fa-terminal"></i>
+          </div>
+
+          <h3>Herramientas</h3>
+          <p>Entornos y recursos para trabajar eficientemente.</p>
+
+          <div class="skill-tags">
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>VS Code</span>
+            <span>Figma</span>
+          </div>
+        </div>
+
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <span class="skill-number">04</span>
+            <i class="fa-solid fa-brain"></i>
+          </div>
+
+          <h3>Profesionales</h3>
+          <p>Competencias para resolver problemas y colaborar.</p>
+
+          <div class="skill-tags">
+            <span>Resolución de problemas</span>
+            <span>Comunicación</span>
+            <span>Adaptabilidad</span>
+            <span>Aprendizaje continuo</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+
+      <div class="section-heading reveal">
+        <span class="section-index">03 / PROYECTOS SELECCIONADOS</span>
+        <h2>Proyectos <span>seleccionados.</span></h2>
+        <p>Una muestra de soluciones digitales y conceptos de desarrollo web.</p>
+      </div>
+
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=1000&q=85"
+              alt="Interfaz conceptual de plataforma digital" loading="lazy">
+
+            <span class="project-category">01 / DISEÑO WEB</span>
+
+            <a href="#" class="project-preview" aria-label="Ver proyecto">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <div class="project-content">
+
+            <div class="project-topline">
+              <span>2026</span>
+              <span>01</span>
+            </div>
+
+            <h3>KIRR Studio</h3>
+
+            <p>
+              Sitio web conceptual para un estudio creativo,
+              con una interfaz moderna y una navegación intuitiva.
+            </p>
+
+            <div class="project-technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                Ver proyecto <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                Código fuente <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1000&q=85"
+              alt="Panel de análisis y estadísticas digitales" loading="lazy">
+
+            <span class="project-category">02 / GESTIÓN / DASHBOARD</span>
+
+            <a href="#" class="project-preview" aria-label="Ver proyecto">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <div class="project-content">
+
+            <div class="project-topline">
+              <span>2026</span>
+              <span>02</span>
+            </div>
+
+            <h3>KIRR Analytics</h3>
+
+            <p>
+              Dashboard administrativo para visualizar
+              información, estadísticas y métricas de negocio.
+            </p>
+
+            <div class="project-technologies">
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+              <span>Charts</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                Ver proyecto <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                Código fuente <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1000&q=85"
+              alt="Concepto de interfaz de comercio electrónico" loading="lazy">
+
+            <span class="project-category">03 / COMERCIO DIGITAL</span>
+
+            <a href="#" class="project-preview" aria-label="Ver proyecto">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <div class="project-content">
+
+            <div class="project-topline">
+              <span>2026</span>
+              <span>03</span>
+            </div>
+
+            <h3>KIRR Market</h3>
+
+            <p>
+              Experiencia de comercio electrónico enfocada
+              en la presentación de productos y facilidad de compra.
+            </p>
+
+            <div class="project-technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                Ver proyecto <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                Código fuente <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section class="section experience-section" id="experience">
+
+      <div class="section-heading reveal">
+        <span class="section-index">04 / EXPERIENCIAS</span>
+        <h2>Mi recorrido <span>profesional.</span></h2>
+        <p>Experiencia y formación en constante evolución.</p>
+      </div>
+
+
+      <div class="timeline">
+
+        <article class="timeline-item reveal">
+
+          <div class="timeline-marker"></div>
+
+          <div class="timeline-date">2026 - PRESENTE</div>
+
+          <div class="timeline-content">
+            <span class="experience-type">01 / DESARROLLO</span>
+
+            <h3>DESARROLLADOR FRONTEND</h3>
+
+            <h4>Desarrollo independiente</h4>
+
+            <p>
+              Desarrollo de proyectos web, construcción de
+              interfaces responsivas y aplicación de buenas
+              prácticas de programación.
+            </p>
+
+            <div class="skill-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+        </article>
+
+
+        <article class="timeline-item reveal">
+
+          <div class="timeline-marker"></div>
+
+          <div class="timeline-date">2025 - PRESENTE</div>
+
+          <div class="timeline-content">
+            <span class="experience-type">02 / FORMACIÓN</span>
+
+            <h3>Desarrollador en formación</h3>
+
+            <h4>Aprendizaje y proyectos personales</h4>
+
+            <p>
+              Formación en programación, fundamentos de
+              desarrollo web, lógica computacional y
+              diseño de experiencias digitales.
+            </p>
+
+            <div class="skill-tags">
+              <span>Programación</span>
+              <span>Diseño web</span>
+              <span>POO</span>
+            </div>
+          </div>
+
+        </article>
+
+      </div>
+
+      <p class="experience-note">
+        <i class="fa-solid fa-circle-info"></i>
+        Experiencia ilustrativa. Personaliza los periodos y
+        responsabilidades según tu trayectoria real.
+      </p>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+
+      <div class="section-heading reveal">
+        <span class="section-index">05 / CONTACTOS</span>
+        <h2>Construyamos algo <span>interesante.</span></h2>
+        <p>¿Tienes una idea o proyecto? Hablemos.</p>
+      </div>
+
+
+      <div class="contact-grid">
+
+        <div class="contact-information reveal">
+
+          <span class="small-label">INICIEMOS UNA CONVERSACIÓN</span>
+
+          <h3>
+            Las buenas ideas comienzan con
+            <span class="gradient-text">una conversación.</span>
+          </h3>
+
+          <p>
+            Estoy abierto a conocer nuevas propuestas,
+            colaborar en proyectos y conectar con
+            personas del mundo tecnológico.
+          </p>
+
+          <div class="contact-detail">
+            <span class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+
+            <div>
+              <small>GMAIL</small>
+              <a href="mailto:tuGmail@ejemplo.com">
+                tuemail@ejemplo.com
+              </a>
+            </div>
+          </div>
+
+
+          <div class="social-links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+
+        </div>
+
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+
+          <div class="form-header">
+            <span>FORMULARIO DE CONTACTO</span>
+            <span class="form-status">
+              <span class="status-dot"></span>
+              DISPONIBLE
+            </span>
+          </div>
+
+
+          <div class="form-group">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required minlength="2">
+            <small class="field-error"></small>
+          </div>
+
+
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+            <small class="field-error"></small>
+          </div>
+
+
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required
+              minlength="10"></textarea>
+            <small class="field-error"></small>
+          </div>
+
+
+          <button type="submit" class="button button-primary submit-button">
+            <span>Enviar mensaje</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+
+          <div id="form-feedback" class="form-feedback" role="status" aria-live="polite" hidden>
+            <i class="fa-solid fa-circle-check"></i>
+            <span></span>
+          </div>
+
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+
+      <a href="#home" class="logo footer-logo">
+        KR<span>.</span>
+      </a>
+      <p>Construyendo experiencias digitales con intención.</p>
+
+      <a href="#home" class="back-to-top">
+        VOLVER ARRIBA <i class="fa-solid fa-arrow-up"></i>
+      </a>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 KEURY ROSARIO. TODOS LOS DERECHOS RESERVADOS.</span>
+      <span>HECHO CON IMPACIENCIA Y UN POCO DE IA.</span>
+    </div>
+
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
